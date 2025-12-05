@@ -1,2 +1,2 @@
 # sample-site
-smple site.
+sample site.
