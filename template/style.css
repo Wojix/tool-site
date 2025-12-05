@@ -1,0 +1,30 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.square {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-size: xx-large;
+    color: #ffffff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: #151515;
+    z-index: 99;
+}
+
+body::before {
+    content: "";
+    display: block;
+    height: 50px;
+}
