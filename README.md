@@ -1,2 +1,1 @@
-# sample-site
-sample site.
+# tool site
