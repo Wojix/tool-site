@@ -16,33 +16,40 @@
                     <input type="text" class="display" name="display" value="" disabled>
                 </td>
             </tr>
-            <!--1段目 7,8,9,÷-->
+            <!--1段目 AC,+/-,%,÷-->
+            <tr>
+                <td><input type="button" value="AC" class="Function" onclick="get_calc(this)"></td>
+                <td><input type="button" value="+/-" class="Function" onclick="get_calc(this)"></td>
+                <td><input type="button" value="%" class="Function" onclick="get_calc(this)"></td>
+                <td><input type="button" value="÷" class="operator" name="div_btn" onclick="get_calc(this)"></td>
+            </tr>
+            <!--2段目 7,8,9,×-->
             <tr>
                 <td><input type="button" value="7" onclick="get_calc(this)"></td>
                 <td><input type="button" value="8" onclick="get_calc(this)"></td>
                 <td><input type="button" value="9" onclick="get_calc(this)"></td>
-                <td><input type="button" value="÷" class="operator" name="div_btn" onclick="get_calc(this)"></td>
+                <td><input type="button" value="×" class="operator" name="multi_btn" onclick="get_calc(this)"></td>
             </tr>
-            <!--2段目 4,5,6,×-->
+            <!--3段目 4,5,6,-.-->
             <tr>
                 <td><input type="button" value="4" onclick="get_calc(this)"></td>
                 <td><input type="button" value="5" onclick="get_calc(this)"></td>
                 <td><input type="button" value="6" onclick="get_calc(this)"></td>
-                <td><input type="button" value="×" class="operator" name="multi_btn" onclick="get_calc(this)"></td>
+                <td><input type="button" value="-" class="operator" onclick="get_calc(this)"></td>
             </tr>
-            <!--3段目 1,2,3,-.-->
+            <!--4段目 1,2,3,+-->
             <tr>
                 <td><input type="button" value="1" onclick="get_calc(this)"></td>
                 <td><input type="button" value="2" onclick="get_calc(this)"></td>
                 <td><input type="button" value="3" onclick="get_calc(this)"></td>
-                <td><input type="button" value="-" class="operator" onclick="get_calc(this)"></td>
+                <td><input type="button" value="+" class="operator" onclick="get_calc(this)"></td>
             </tr>
-            <!--4段目 0,c,=,+-->
+            <!--5段目 0,0,.,=-->
             <tr>
                 <td><input type="button" value="0" onclick="get_calc(this)"></td>
-                <td><input type="button" value="C" onclick="get_calc(this)"></td>
-                <td><input type="button" value="=" class="equal" onclick="get_calc(this)"></td>
-                <td><input type="button" value="+" class="operator" onclick="get_calc(this)"></td>
+                <td><input type="button" value="0" onclick="get_calc(this)"></td>
+                <td><input type="button" value="." onclick="get_calc(this)"></td>
+                <td><input type="button" value="=" class="operator" onclick="get_calc(this)"></td>
             </tr>
         </table>
             <script src="script.js"></script>
