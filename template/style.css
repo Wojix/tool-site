@@ -22,7 +22,6 @@ body {
     background-color: #151515;
     z-index: 99;
 }
-
 body::before {
     content: "";
     display: block;
